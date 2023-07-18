@@ -3,3 +3,4 @@ export const refs = {
   searchForm: document.querySelector('.search-form'),
   loadButton: document.querySelector('.load-more'),
 };
+

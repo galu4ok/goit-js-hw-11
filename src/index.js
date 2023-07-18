@@ -76,6 +76,14 @@ async function onMoreBtnClick() {
       refs.loadButton.style.display = 'block';
     }
     refs.gallery.insertAdjacentHTML('beforeend', createMarkup(data.hits));
+
+    const { height: cardHeight } =
+      refs.gallery.firstElementChild.getBoundingClientRect();
+
+    window.scrollBy({
+      top: cardHeight * 2,
+      behavior: 'smooth',
+    });
   });
 }
 
