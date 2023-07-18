@@ -34,7 +34,7 @@ async function onSearchFormSubmit(e) {
   imagesSearchApi
     .getSearchImages()
     .then(data => {
-      console.log('DATA:', data);
+      // console.log('DATA:', data);
       const hitsImages = data.hits;
       const totalImages = data.totalHits;
 
