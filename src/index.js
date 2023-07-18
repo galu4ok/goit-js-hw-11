@@ -58,11 +58,11 @@ async function onSearchFormSubmit(e) {
         }, 3000);
       } else {
         refs.loadButton.style.display = 'block';
-        onMoreBtnClick();
       }
     })
     .catch(onFetchError);
 }
+
 async function onMoreBtnClick() {
   imagesSearchApi.incrementPage();
   lightbox.refresh();
